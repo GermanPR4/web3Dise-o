@@ -299,15 +299,14 @@
 }
 
 .down-events {
-    width: 90%;
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
-    gap: 1.5rem;
+    display: grid; /* NO VUELVO A USAR GRID EN MI VIDA <3 */
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr)); 
+    gap: 3rem;
     margin-top: 2rem;
 }
-
 
 .event {
     background-color: rgb(250, 250, 250);
