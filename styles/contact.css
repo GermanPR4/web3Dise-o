@@ -135,7 +135,10 @@
     }
 
     #message {
-        height: 200px;
+        height: 180px;
     }
 
+    .contact-form button {
+        width: 100%;
+    }
 }

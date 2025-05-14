@@ -2,7 +2,7 @@
 
 .header-section {
     width: 100%;
-    height: 84vh;
+    min-height: 84vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,7 +111,7 @@
 /* CHAMPIONSHIPS */
 .championships-section {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -119,7 +119,6 @@
     gap: 3rem;
     padding: 3rem;
     border-radius: 40px;
-    overflow: hidden;
 }
 
 .up-championships {
@@ -142,6 +141,7 @@
 
 .down-championships {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: stretch;
     gap: 2rem;
@@ -191,8 +191,7 @@
 .video-event {
     position: relative;
     width: 100%;
-    height: 102vh;
-    overflow: hidden;
+    min-height: 102vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -304,10 +303,11 @@
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
     gap: 1.5rem;
     margin-top: 2rem;
 }
+
 
 .event {
     background-color: rgb(250, 250, 250);
@@ -354,4 +354,36 @@
 .participants li {
     font-size: 0.9rem;
     margin-bottom: 0.3rem;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1500px) {
+    .header-right {
+        display: none;
+    }
+
+    .header-left {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem 0 1rem 0;
+    }
+}
+
+@media (max-width: 850px) {
+    .header-text {
+        padding: 2rem;
+    }
+
+    .header-left-images img:first-child {
+        display: none;
+    }
+
+    .header-left-images img:last-child {
+        width: 100%;
+        aspect-ratio: 8/4;
+    }
 }
