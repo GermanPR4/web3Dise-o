@@ -464,3 +464,9 @@
         height: 40vh;
     }
 }
+
+@media (max-width: 480px) {
+    .fast-contact {
+        min-height: 75vh;
+    }
+}
