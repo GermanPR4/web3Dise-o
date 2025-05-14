@@ -319,6 +319,7 @@ nav ul li:last-child .active:hover {
     padding: 10px;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    text-align: center;
 }
 
 
