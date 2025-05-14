@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.header-section {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-image: url('../images/retrato-motociclista-casco.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-section>* {
+    width: 45%;
+    margin-left: 8rem;
+    margin-bottom: 1rem;
+}
+
+.header-section p:first-child {
+    font-size: 1rem;
+    font-family: Nexagon;
+    font-style: italic;
+
+    margin-bottom: .5rem;
+}
+
+.header-section h1 {
+    font-size: 3.5rem;
+    font-family: Nexagon;
+    margin-bottom: 1rem;
+    color: var(--foreground-color);
+    text-shadow: 1px 1px 2px var(--main-color);
+}
+
+.header-section h1 span {
+    color: var(--main-color);
+    text-shadow: 1px 1px 2px var(--foreground-color);
+}
+
+.header-section p:nth-child(3) {
+    margin-bottom: 4rem;
+    width: 42%;
+}
+
+.header-btn {
+    padding: 12px 24px;
+    color: white;
+    font-size: 1.1rem;
+    background-color: var(--foreground-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all 250ms ease-in-out;
+}
+
+.header-btn:hover {
+    background-color: var(--main-color);
+}
+
+.header-section li {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* INTRO SECCION */
+.intro-section {
+    background-color: var(--foreground-color);
+    color: white;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.intro-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.intro-section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+}
+
+/* TRAVIIIIIS SECTION */
+.travis-section {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background-color: #f7f7f7;
+}
+
+.travis-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+
+.travis-image img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.travis-text {
+    flex: 1;
+}
+
+.travis-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.travis-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* OTHERS SECTION */
+.others-section {
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    padding: 50px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.rider {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.rider-image img {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.rider-text {
+    width: 65%;
+}
+
+.rider-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.rider-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+}
+
+.socials img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+    border-radius: 100px;
+}
+
+.socials img:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1250px) {
+    .header-section {
+        width: 100%;
+        background-image: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-section>* {
+        width: 100%;
+        margin: 0;
+    }
+
+    .header-section p:nth-child(3) {
+        margin-bottom: 4rem;
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .travis-content {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0 4rem 0;
+    }
+
+    .rider {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .others-section>div.rider:nth-of-type(2) {
+        margin-top: 5rem;
+    }
+}
