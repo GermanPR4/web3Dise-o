@@ -218,6 +218,10 @@ nav ul li:last-child .active:hover {
 
 /* FOOTER */
 .footer {
+    min-height: 45vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
     background: linear-gradient(135deg, #171717 0%, #2c2c2c 100%);
     color: white;
     padding: 60px 5% 30px;
@@ -338,6 +342,11 @@ nav ul li:last-child .active:hover {
         text-align: center;
         display: flex;
         justify-content: center;
+    }
+
+    .footer-section ul {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
