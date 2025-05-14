@@ -40,6 +40,7 @@ body {
     box-sizing: border-box;
 }
 
+
 /* BARRA DE DESPLAZAMIENTO */
 ::-webkit-scrollbar {
     width: 16px;
@@ -70,7 +71,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     min-height: 15vh;
 }
 
@@ -379,4 +379,3 @@ nav ul li:last-child .active:hover {
         display: none;
     }
 }
-

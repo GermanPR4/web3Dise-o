@@ -1,4 +1,4 @@
-
+// Para la cuenta atrás del evento del link competitions
 const eventDate = new Date("July 14, 2025 12:00:00").getTime();
 
 const countdown = () => {
